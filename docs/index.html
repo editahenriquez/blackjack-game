@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/blackJack.png" type="image/png">
+</head>
+<body>
+    <header class="title">Blackjack</header>
+    <div class="row mt-2">
+        <div id="divButtons" class="col text-center">
+            <button id="btnReset" class="btn btn-danger">Reset</button>
+            <button id="btnDeal" disabled="disabled" class="btn btn-primary">Deal</button>
+            <button id="btnStand" disabled="disabled" class="btn btn-primary">Stand</button>
+        </div>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+            <h3>You - <small>0</small><i class="score"></i></h3>
+            <div id="player-cards" class="divCards">
+            </div>
+        </div>
+    </div>
+
+    <div class="row container mt-2">
+        <div class="col">
+            <h3>Dealer - <small>0</small><i class="score"></i></h3>
+            <div id="computer-cards" class="divCards">
+            </div>
+        </div>
+    </div> 
+
+    <h3 id="score"></h3>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/game.js"></script>
+    <script>
+        document.querySelector('#btnReset').click();
+        //myModule.newGame();
+        //document.querySelector('#btnReset').addEventListener('click', () => { myModule.newGame()});
+    </script>
+</body>
+</html>

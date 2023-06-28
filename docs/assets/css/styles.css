@@ -1,0 +1,46 @@
+html, body {
+    margin: 0px;
+    background-color: #2F4F30;
+    color: white;
+}
+.title {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.card {
+    width: 150px;
+    left: 100px;
+    position: relative;
+    margin-left: -75px;
+}
+
+#player-cards, #computer-cards {
+    height: 240px;
+}
+
+small {
+    color: yellowgreen;
+}
+
+.score {
+    text-align: center;
+    color: #FFD700;
+}
+
+
+/* Default styles */
+  .divCards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Responsive styles using media queries */
+  @media (max-width: 576px) {
+    .divCards {
+      flex-direction: column;
+    }
+  }
