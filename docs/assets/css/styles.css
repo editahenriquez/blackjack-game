@@ -19,7 +19,7 @@ html, body {
 }
 
 #player-cards, #computer-cards {
-    height: 240px;
+    height: 220px;
 }
 
 small {
@@ -31,6 +31,9 @@ small {
     color: #FFD700;
 }
 
+h3 {
+  margin-top: 5px;
+}
 
 /* Default styles */
   .divCards {
